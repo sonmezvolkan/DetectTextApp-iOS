@@ -10,7 +10,5 @@ import Foundation
 
 public class Constant
 {
-    public static let SEARCHED_WORD = ["Pantene", "Gillette", "Meneme11n", "Orkid", "Kaşar11"];
-    
-   
+    public static let SEARCHED_WORD = ["Pantene", "Gillette", "Meneme11n", "Orkid", "Kaşarlı"];
 }
