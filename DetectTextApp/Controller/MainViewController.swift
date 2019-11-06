@@ -7,15 +7,26 @@
 //
 
 import UIKit
+import FirebaseMLVision;
+import Lottie;
 
 class MainViewController: BaseViewController
 {
-
     @IBOutlet weak var imageView: UIImageView!
+    
+    private var detectText: IDetectText?;
+    
+    private static let ERROR_TEXT = "Üzgünüz fiş aradığımız kelimeleri içermiyor.";
     
     override func viewDidLoad()
     {
-        super.viewDidLoad()
+        super.viewDidLoad();
+        self.setUp();
+    }
+    
+    private func setUp()
+    {
+        self.detectText = HelperInjection.getVisionInstance();
     }
 
     @IBAction func btnDetectText_Click(_ sender: Any)
@@ -58,7 +69,59 @@ extension MainViewController: UIImagePickerControllerDelegate, UINavigationContr
             print("No image found")
             return
         }
+        self.detectionText(image: image);
         self.imageView.image = image;
     }
 }
 
+extension MainViewController
+{
+    private func detectionText(image: UIImage)
+    {
+        guard let detectText = detectText else { return; }
+        detectText.getText(image: image, onSuccess: { (result) in
+            self.checkResult(result: result);
+        }, onError: { (error) in
+            self.showError(message: error);
+        });
+    }
+    
+    private func checkResult(result: String)
+    {
+        print(result);
+        for word in Constant.SEARCHED_WORD
+        {
+            if (result.contains(word))
+            {
+                self.showCongrulations();
+                return;
+            }
+        }
+        self.showError(message: MainViewController.ERROR_TEXT);
+    }
+    
+    private func showCongrulations()
+    {
+        let animation = Animation.named("complete")
+        let animationView = AnimationView();
+        animationView.animation = animation
+        animationView.contentMode = .scaleAspectFit
+        animationView.frame = CGRect(x: 0, y: 60, width: self.view.frame.width, height: self.view.frame.height * 2 / 3);
+        view.addSubview(animationView);
+        animationView.play { (isFinish) in
+            animationView.removeFromSuperview();
+            self.showSuccess();
+        }
+        self.view.bringSubviewToFront(animationView);
+    }
+    
+    private func showSuccess()
+    {
+        
+    }
+    
+    private func showError(message: String)
+    {
+        
+    }
+}

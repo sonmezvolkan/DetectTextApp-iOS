@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30A7D4B825E8A527C24EAE74 /* Pods_DetectTextApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44459C7ED1A35C469084CBC4 /* Pods_DetectTextApp.framework */; };
 		F640F92A23729B13006E1293 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F640F92923729B13006E1293 /* AppDelegate.swift */; };
 		F640F92C23729B13006E1293 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F640F92B23729B13006E1293 /* MainViewController.swift */; };
 		F640F92F23729B13006E1293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F640F92D23729B13006E1293 /* Main.storyboard */; };
@@ -14,9 +15,18 @@
 		F640F93423729B13006E1293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F640F93223729B13006E1293 /* LaunchScreen.storyboard */; };
 		F640F94323729BA5006E1293 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F640F94223729BA5006E1293 /* BaseViewController.swift */; };
 		F640F94523729BE9006E1293 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F640F94423729BE9006E1293 /* Button.swift */; };
+		F640F94A2372A288006E1293 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F640F9492372A288006E1293 /* Constant.swift */; };
+		F640F9512372A491006E1293 /* DetectTextWithFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F640F9502372A491006E1293 /* DetectTextWithFirebase.swift */; };
+		F640F9562372A6FE006E1293 /* IDetectText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F640F9552372A6FE006E1293 /* IDetectText.swift */; };
+		F640F9592372A81F006E1293 /* HelperInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F640F9582372A81F006E1293 /* HelperInjection.swift */; };
+		F640F95B2372ABFF006E1293 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F640F95A2372ABFF006E1293 /* GoogleService-Info.plist */; };
+		F640F95D2372AE33006E1293 /* complete.json in Resources */ = {isa = PBXBuildFile; fileRef = F640F95C2372AE33006E1293 /* complete.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34DCE1BC8D913B8886D9D62B /* Pods-DetectTextApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetectTextApp.debug.xcconfig"; path = "Target Support Files/Pods-DetectTextApp/Pods-DetectTextApp.debug.xcconfig"; sourceTree = "<group>"; };
+		44459C7ED1A35C469084CBC4 /* Pods_DetectTextApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DetectTextApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68104331F8F4BFEED5466C9F /* Pods-DetectTextApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetectTextApp.release.xcconfig"; path = "Target Support Files/Pods-DetectTextApp/Pods-DetectTextApp.release.xcconfig"; sourceTree = "<group>"; };
 		F640F92623729B13006E1293 /* DetectTextApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DetectTextApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F640F92923729B13006E1293 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F640F92B23729B13006E1293 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +36,12 @@
 		F640F93523729B13006E1293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F640F94223729BA5006E1293 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F640F94423729BE9006E1293 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		F640F9492372A288006E1293 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		F640F9502372A491006E1293 /* DetectTextWithFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectTextWithFirebase.swift; sourceTree = "<group>"; };
+		F640F9552372A6FE006E1293 /* IDetectText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDetectText.swift; sourceTree = "<group>"; };
+		F640F9582372A81F006E1293 /* HelperInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperInjection.swift; sourceTree = "<group>"; };
+		F640F95A2372ABFF006E1293 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F640F95C2372AE33006E1293 /* complete.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = complete.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30A7D4B825E8A527C24EAE74 /* Pods_DetectTextApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02EBA4A0A9D486A02790B3AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44459C7ED1A35C469084CBC4 /* Pods_DetectTextApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1487E334ACA9F9D76619A9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34DCE1BC8D913B8886D9D62B /* Pods-DetectTextApp.debug.xcconfig */,
+				68104331F8F4BFEED5466C9F /* Pods-DetectTextApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F640F91D23729B12006E1293 = {
 			isa = PBXGroup;
 			children = (
 				F640F92823729B13006E1293 /* DetectTextApp */,
 				F640F92723729B13006E1293 /* Products */,
+				C1487E334ACA9F9D76619A9E /* Pods */,
+				02EBA4A0A9D486A02790B3AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +94,14 @@
 		F640F92823729B13006E1293 /* DetectTextApp */ = {
 			isa = PBXGroup;
 			children = (
+				F640F95C2372AE33006E1293 /* complete.json */,
 				F640F94023729B6F006E1293 /* Init */,
+				F640F9482372A271006E1293 /* Constant */,
+				F640F94B2372A313006E1293 /* Utility */,
 				F640F93B23729B25006E1293 /* View */,
 				F640F93F23729B58006E1293 /* Controller */,
 				F640F93523729B13006E1293 /* Info.plist */,
+				F640F95A2372ABFF006E1293 /* GoogleService-Info.plist */,
 			);
 			path = DetectTextApp;
 			sourceTree = "<group>";
@@ -126,6 +166,48 @@
 			path = BaseViewController;
 			sourceTree = "<group>";
 		};
+		F640F9482372A271006E1293 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				F640F9492372A288006E1293 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		F640F94B2372A313006E1293 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F640F9572372A80D006E1293 /* Helper */,
+				F640F9542372A6F1006E1293 /* Interface */,
+				F640F94C2372A31E006E1293 /* FirebaseMLVision */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F640F94C2372A31E006E1293 /* FirebaseMLVision */ = {
+			isa = PBXGroup;
+			children = (
+				F640F9502372A491006E1293 /* DetectTextWithFirebase.swift */,
+			);
+			path = FirebaseMLVision;
+			sourceTree = "<group>";
+		};
+		F640F9542372A6F1006E1293 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				F640F9552372A6FE006E1293 /* IDetectText.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		F640F9572372A80D006E1293 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F640F9582372A81F006E1293 /* HelperInjection.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F640F93823729B13006E1293 /* Build configuration list for PBXNativeTarget "DetectTextApp" */;
 			buildPhases = (
+				9F2240431C5317003F5B4740 /* [CP] Check Pods Manifest.lock */,
 				F640F92223729B13006E1293 /* Sources */,
 				F640F92323729B13006E1293 /* Frameworks */,
 				F640F92423729B13006E1293 /* Resources */,
+				7E743B5C5ADE5FA84056292B /* [CP] Embed Pods Frameworks */,
+				DEE1444E500A60D0F473D44C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,6 +270,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F640F93423729B13006E1293 /* LaunchScreen.storyboard in Resources */,
+				F640F95B2372ABFF006E1293 /* GoogleService-Info.plist in Resources */,
+				F640F95D2372AE33006E1293 /* complete.json in Resources */,
 				F640F93123729B13006E1293 /* Assets.xcassets in Resources */,
 				F640F92F23729B13006E1293 /* Main.storyboard in Resources */,
 			);
@@ -192,13 +279,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7E743B5C5ADE5FA84056292B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DetectTextApp/Pods-DetectTextApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DetectTextApp/Pods-DetectTextApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DetectTextApp/Pods-DetectTextApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F2240431C5317003F5B4740 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DetectTextApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEE1444E500A60D0F473D44C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DetectTextApp/Pods-DetectTextApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DetectTextApp/Pods-DetectTextApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DetectTextApp/Pods-DetectTextApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F640F92223729B13006E1293 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F640F9562372A6FE006E1293 /* IDetectText.swift in Sources */,
 				F640F92C23729B13006E1293 /* MainViewController.swift in Sources */,
 				F640F92A23729B13006E1293 /* AppDelegate.swift in Sources */,
+				F640F9592372A81F006E1293 /* HelperInjection.swift in Sources */,
+				F640F94A2372A288006E1293 /* Constant.swift in Sources */,
+				F640F9512372A491006E1293 /* DetectTextWithFirebase.swift in Sources */,
 				F640F94323729BA5006E1293 /* BaseViewController.swift in Sources */,
 				F640F94523729BE9006E1293 /* Button.swift in Sources */,
 			);
@@ -344,6 +494,7 @@
 		};
 		F640F93923729B13006E1293 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34DCE1BC8D913B8886D9D62B /* Pods-DetectTextApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -362,6 +513,7 @@
 		};
 		F640F93A23729B13006E1293 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68104331F8F4BFEED5466C9F /* Pods-DetectTextApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
