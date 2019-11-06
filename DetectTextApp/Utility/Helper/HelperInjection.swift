@@ -14,4 +14,9 @@ public class HelperInjection
     {
         return DetectTextWithFirebase();
     }
+    
+    static func getAlertViewInstance() -> IAlertView
+    {
+        return AlertViewSCL();
+    }
 }

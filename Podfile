@@ -11,5 +11,5 @@ target 'DetectTextApp' do
 	pod 'Firebase/MLVision'
 	pod 'Firebase/MLVisionTextModel'
 	pod 'lottie-ios'
-
+	pod 'SCLAlertView'
 end

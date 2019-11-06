@@ -15,6 +15,7 @@ class MainViewController: BaseViewController
     @IBOutlet weak var imageView: UIImageView!
     
     private var detectText: IDetectText?;
+    private let alertView: IAlertView = HelperInjection.getAlertViewInstance();
     
     private static let ERROR_TEXT = "Üzgünüz fiş aradığımız kelimeleri içermiyor.";
     
@@ -117,11 +118,11 @@ extension MainViewController
     
     private func showSuccess()
     {
-        
+        self.alertView.show(title: "Tebrikler 200 puan kazandınız", message: "Doğru fişi taratarak ödül kazandınız.", type: AlertViewConstant.AlertViewType.Success);
     }
     
     private func showError(message: String)
     {
-        
+        self.alertView.show(title: "Hata", message: "Bu Fiş geçerli değil.", type: AlertViewConstant.AlertViewType.Error);
     }
 }

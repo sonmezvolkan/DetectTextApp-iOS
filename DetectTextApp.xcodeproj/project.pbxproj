@@ -21,6 +21,9 @@
 		F640F9592372A81F006E1293 /* HelperInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F640F9582372A81F006E1293 /* HelperInjection.swift */; };
 		F640F95B2372ABFF006E1293 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F640F95A2372ABFF006E1293 /* GoogleService-Info.plist */; };
 		F640F95D2372AE33006E1293 /* complete.json in Resources */ = {isa = PBXBuildFile; fileRef = F640F95C2372AE33006E1293 /* complete.json */; };
+		F640F9692372B311006E1293 /* AlertViewSCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F640F9682372B311006E1293 /* AlertViewSCL.swift */; };
+		F640F96C2372B355006E1293 /* IAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F640F96B2372B355006E1293 /* IAlertView.swift */; };
+		F640F96E2372C6DD006E1293 /* AlertViewConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F640F96D2372C6DD006E1293 /* AlertViewConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		F640F9582372A81F006E1293 /* HelperInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperInjection.swift; sourceTree = "<group>"; };
 		F640F95A2372ABFF006E1293 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F640F95C2372AE33006E1293 /* complete.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = complete.json; sourceTree = "<group>"; };
+		F640F9682372B311006E1293 /* AlertViewSCL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewSCL.swift; sourceTree = "<group>"; };
+		F640F96B2372B355006E1293 /* IAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAlertView.swift; sourceTree = "<group>"; };
+		F640F96D2372C6DD006E1293 /* AlertViewConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,8 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				F640F9572372A80D006E1293 /* Helper */,
-				F640F9542372A6F1006E1293 /* Interface */,
-				F640F94C2372A31E006E1293 /* FirebaseMLVision */,
+				F640F9632372B277006E1293 /* AlertView */,
+				F640F9622372B257006E1293 /* Vision */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -192,12 +198,12 @@
 			path = FirebaseMLVision;
 			sourceTree = "<group>";
 		};
-		F640F9542372A6F1006E1293 /* Interface */ = {
+		F640F9542372A6F1006E1293 /* Abstract */ = {
 			isa = PBXGroup;
 			children = (
 				F640F9552372A6FE006E1293 /* IDetectText.swift */,
 			);
-			path = Interface;
+			path = Abstract;
 			sourceTree = "<group>";
 		};
 		F640F9572372A80D006E1293 /* Helper */ = {
@@ -206,6 +212,57 @@
 				F640F9582372A81F006E1293 /* HelperInjection.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		F640F9622372B257006E1293 /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				F640F9542372A6F1006E1293 /* Abstract */,
+				F640F9652372B29C006E1293 /* Concrete */,
+			);
+			path = Vision;
+			sourceTree = "<group>";
+		};
+		F640F9632372B277006E1293 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				F640F9642372B28A006E1293 /* Abstract */,
+				F640F9662372B2D1006E1293 /* Concrete */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
+		F640F9642372B28A006E1293 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				F640F96B2372B355006E1293 /* IAlertView.swift */,
+				F640F96D2372C6DD006E1293 /* AlertViewConstant.swift */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		F640F9652372B29C006E1293 /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				F640F94C2372A31E006E1293 /* FirebaseMLVision */,
+			);
+			path = Concrete;
+			sourceTree = "<group>";
+		};
+		F640F9662372B2D1006E1293 /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				F640F96A2372B321006E1293 /* SCLAlertView */,
+			);
+			path = Concrete;
+			sourceTree = "<group>";
+		};
+		F640F96A2372B321006E1293 /* SCLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				F640F9682372B311006E1293 /* AlertViewSCL.swift */,
+			);
+			path = SCLAlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,12 +402,15 @@
 			files = (
 				F640F9562372A6FE006E1293 /* IDetectText.swift in Sources */,
 				F640F92C23729B13006E1293 /* MainViewController.swift in Sources */,
+				F640F96E2372C6DD006E1293 /* AlertViewConstant.swift in Sources */,
 				F640F92A23729B13006E1293 /* AppDelegate.swift in Sources */,
 				F640F9592372A81F006E1293 /* HelperInjection.swift in Sources */,
+				F640F9692372B311006E1293 /* AlertViewSCL.swift in Sources */,
 				F640F94A2372A288006E1293 /* Constant.swift in Sources */,
 				F640F9512372A491006E1293 /* DetectTextWithFirebase.swift in Sources */,
 				F640F94323729BA5006E1293 /* BaseViewController.swift in Sources */,
 				F640F94523729BE9006E1293 /* Button.swift in Sources */,
+				F640F96C2372B355006E1293 /* IAlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
